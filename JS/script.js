@@ -62,6 +62,8 @@ function crearPalabraOculta() {
     }
 }
 
+// función para mostrar el ahorcado
+
 function mostrarAhorcado() {
     divAhorcado.innerHTML = "<img src='img/" + intentos + ".png'>";
 }
