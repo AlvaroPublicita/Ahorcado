@@ -44,3 +44,20 @@ let divLetras = document.getElementById("letras");
 let divMensaje = document.getElementById("mensaje");
 let divBoton = document.getElementById("boton");
 let divAhorcado = document.getElementById("ahorcado");
+
+// FUNCIONES
+
+// Función para elegir una palabra aleatoria del array de palabras
+
+function elegirPalabra() {
+    let numero = Math.floor(Math.random() * palabras.length);
+    palabra = palabras[numero];
+}
+
+// Función para crear la palabra oculta
+
+function crearPalabraOculta() {
+    for (let i = 0; i < palabra.length; i++) {
+        palabraOculta += "_";
+    }
+}
