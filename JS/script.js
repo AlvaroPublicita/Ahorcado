@@ -62,6 +62,79 @@ function crearPalabraOculta() {
     }
 }
 
+// función para crear las letras
+
+function crearLetras() {
+    for (let i = 0; i < 26; i++) {
+        let letra = String.fromCharCode(65 + i);
+        let boton = document.createElement("button");
+        boton.innerHTML = letra;
+        boton.onclick = jugar;
+        divLetras.appendChild(boton);
+        letras.push(boton);
+    }
+}
+
+// Función para mostrar la pista
+
+function mostrarPista() {
+    let numero = Math.floor(Math.random() * palabra.length);
+    pista = palabra[numero];
+    divPista.innerHTML = "Pista: " + pista;
+}
+
+// Función para mostrar la palabra oculta
+
+function mostrarPalabraOculta() {
+    divPalabra.innerHTML = "";
+    for (let i = 0; i < palabraOculta.length; i++) {
+        divPalabra.innerHTML += palabraOculta[i] + " ";
+    }
+}
+
+// Función para mostrar las letras
+
+function mostrarLetras() {
+    for (let i = 0; i < letras.length; i++) {
+        letras[i].style.display = "inline-block";
+    }
+}
+
+// Función para mostrar la puntuación
+
+function mostrarPuntuacion() {
+    divPuntuacion.innerHTML = "Ganadas: " + ganadas + " - Perdidas: " + perdidas;
+}
+
+// Función para mostrar los intentos
+
+function mostrarIntentos() {
+    divIntentos.innerHTML = "Intentos: " + intentos;
+}
+
+// Función para mostrar el mensaje
+
+function mostrarMensaje(mensaje) {
+    divMensaje.innerHTML = mensaje;
+}
+
+// Función para mostrar el botón
+
+function mostrarBoton() {
+    divBoton.style.display = "inline-block";
+}
+
+// Función para comprobar si se ha usado la pista
+
+function comprobarPista() {
+    if (pistaUsada == false) {
+        if (pista == palabraOculta) {
+            mostrarMensaje("¡Has usado la pista!");
+            pistaUsada = true;
+        }
+    }
+}
+
 // función para mostrar el ahorcado
 
 function mostrarAhorcado() {
