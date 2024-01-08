@@ -3,18 +3,46 @@ let cant_errores = 0; //cuantas veces me equivoqué
 let cant_aciertos = 0; //cuantas letras acerté
 
 const palabras = [
-    'manzanas',     /* 0 */
-    'Camiseta',     /* 1 */
-    'caramelos',    /* 2 */
-    'ñoquis',       /* 3 */
-    'streamer',     /* 4 */
-    'twitch',       /* 5 */
-    'murciegalo',   /* 6 */
-    'microfono'     /* 7 */
+    'HACKABOSS',     /* 0 */
+    'JAVASCRIPT',    /* 1 */
+    'PROGRAMACION',  /* 2 */
+    'VARIABLE  ',    /* 3 */
+    'FUNCION',       /* 4 */
+    'OBJETO',        /* 5 */
+    'CLASE',         /* 6 */
+    'HERENCIA',      /* 7 */
+    'PROTOTIPO',     /* 8 */
+    'ARRAY',         /* 9 */
+    'STRING',        /* 10 */
+    'BOOLEAN',       /* 11 */
+    'NUMBER',        /* 12 */
+    'NULL',          /* 13 */
+    'METODO',        /* 14 */
+    'BUCLE',         /* 15 */
+    'CONDICIONAL',   /* 16 */
+    'JSON',          /* 17 */
+    'DOM',           /* 18 */
+    'EVENTO',        /* 19 */
+    'CALLBACK',      /* 20 */
+    'PROMESA',       /* 21 */
+    'ASYNC',         /* 22 */
+    'AWAIT',         /* 23 */
+
 ];
 const btn = id('jugar');
 const imagen = id( 'imagen' );
 const btn_letras = document.querySelectorAll( "#letras button" );
+
+function id( str ){
+    return document.getElementById( str );
+}
+
+function obtener_random( num_min, num_max ){
+    const amplitud_valores = num_max - num_min; //valor más alto - valor más bajo del random... (7 - 0)
+    const valor_al_azar = Math.floor( Math.random( ) * amplitud_valores ) + num_min; /* 5 - 15 = 10 + 5 */
+    return valor_al_azar;
+}
+
 
 /* click en iniciar juego */
 btn.addEventListener('click', iniciar );
