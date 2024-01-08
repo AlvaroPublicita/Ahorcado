@@ -1,82 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahorcado Grupo A - Hack a Boss</title>
-    <link rel="stylesheet" href="./CSS/styles.CSS">
-    <meta name="autores" content="Álvaro, Joseth, Juan, Andrés">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="funciones.js"></script>
+    <title>Ahorcado</title>
 </head>
-<header>
-    <h1> IA vs Humans </h1>
-    <h2> Ayuda a los humanos a no morir ahorcados</h2>
-</header>
 <body>
+    <header>
+        <h1>Ahorcado</h1>
+    </header>
+    <main>
+        <img id="imagen" src="img/img0.png" alt="Ahorcado" />
+        <div>
+            <p id="palabra_a_adivinar">
+            </p>
+            <button id="jugar">Obtener palabra</button>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="ahorcado__vidas">
+            <p id="resultado"></p>
 
-                </div>
+            <div id="letras">
+                <button>a</button>
+                <button>b</button>
+                <button>c</button>
+                <button>d</button>
+                <button>e</button>
+                <button>f</button>
+                <button>g</button>
+                <button>h</button>
+                <button>i</button>
+                <button>j</button>
+                <button>k</button>
+                <button>l</button>
+                <button>m</button>
+                <button>n</button>
+                <button>ñ</button>
+                <button>o</button>
+                <button>p</button>
+                <button>q</button>
+                <button>r</button>
+                <button>s</button>
+                <button>t</button>
+                <button>u</button>
+                <button>v</button>
+                <button>w</button>
+                <button>x</button>
+                <button>y</button>
+                <button>z</button>
             </div>
         </div>
-    </div>
-
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="ahorcado">
-                    <div class="ahorcado__imagen">
-                        <img src="./img/ahorcado.png" alt="Ahorcado">
-                    </div>
-                    <div class="ahorcado__palabra">
-
-                    </div>
-                    <div class="ahorcado__letras">
-                        <div class="ahorcado__letras__letra">A</div>
-                        <div class="ahorcado__letras__letra">B</div>
-                        <div class="ahorcado__letras__letra">C</div>
-                        <div class="ahorcado__letras__letra">D</div>
-                        <div class="ahorcado__letras__letra">E</div>
-                        <div class="ahorcado__letras__letra">F</div>
-                        <div class="ahorcado__letras__letra">G</div>
-                        <div class="ahorcado__letras__letra">H</div>
-                        <div class="ahorcado__letras__letra">I</div>
-                        <div class="ahorcado__letras__letra">J</div>
-                        <div class="ahorcado__letras__letra">K</div>
-                        <div class="ahorcado__letras__letra">L</div>
-                        <div class="ahorcado__letras__letra">M</div>
-                        <div class="ahorcado__letras__letra">N</div>
-                        <div class="ahorcado__letras__letra">Ñ</div>
-                        <div class="ahorcado__letras__letra">O</div>
-                        <div class="ahorcado__letras__letra">P</div>
-                        <div class="ahorcado__letras__letra">Q</div>
-                        <div class="ahorcado__letras__letra">R</div>
-                        <div class="ahorcado__letras__letra">S</div>
-                        <div class="ahorcado__letras__letra">T</div>
-                        <div class="ahorcado__letras__letra">U</div>
-                        <div class="ahorcado__letras__letra">V</div>
-                        <div class="ahorcado__letras__letra">W</div>
-                        <div class="ahorcado__letras__letra">X</div>
-                        <div class="ahorcado__letras__letra">Y</div>
-                        <div class="ahorcado__letras__letra">Z</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="./JS/scrip.JS"></script>
-
-
- <footer>
-
-    <p>Todos los derechos reservados - Álvaro Díaz and Juan Varela - 2024 - Grupo A </p>
-    
-
- </footer>
-    
+    </main>
+    <script src="juego.js"></script>
 </body>
 </html>
