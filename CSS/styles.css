@@ -89,3 +89,9 @@ main .btn:active {
     background-color: #ffffff;
     color: #000000;
 }
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
