@@ -61,3 +61,82 @@ function crearPalabraOculta() {
         palabraOculta += "_";
     }
 }
+
+function mostrarAhorcado() {
+    divAhorcado.innerHTML = "<img src='img/" + intentos + ".png'>";
+}
+
+// Función para comprobar si la letra está en la palabra
+
+function comprobarLetra(letra) {
+    letraUsada = false;
+    for (let i = 0; i < palabra.length; i++) {
+        if (letra == palabra[i]) {
+            palabraOculta = palabraOculta.substr(0, i) + letra + palabraOculta.substr(i + 1);
+            letraUsada = true;
+            aciertos++;
+        }
+    }
+    if (letraUsada == false) {
+        intentos--;
+        fallos++;
+    }
+}
+
+// Función para comprobar si el juego ha terminado
+
+function comprobarJuegoTerminado() {
+    if (intentos == 0) {
+        juegoTerminado = true;
+        perdidas++;
+    }
+    if (aciertos == palabra.length) {
+        juegoTerminado = true;
+        ganadas++;
+    }
+}
+
+// Función para reiniciar el juego
+
+function reiniciarJuego() {
+    palabra = "";
+    palabraOculta = "";
+    letras = [];
+    intentos = 6;
+    pista = "";
+    pistaUsada = false;
+    letraUsada = false;
+    juegoTerminado = false;
+    divBoton.style.display = "none";
+    divMensaje.innerHTML = "";
+    divAhorcado.innerHTML = "";
+    elegirPalabra();
+    crearPalabraOculta();
+    crearLetras();
+    mostrarPista();
+    mostrarIntentos();
+    mostrarPuntuacion();
+    mostrarPalabraOculta();
+    mostrarLetras();
+}
+
+// Función para jugar
+
+function jugar() {
+    comprobarLetra(this.innerHTML);
+    comprobarPista();
+    comprobarJuegoTerminado();
+    mostrarPalabraOculta();
+    mostrarLetras();
+    mostrarIntentos();
+    mostrarPuntuacion();
+    mostrarAhorcado();
+    if (juegoTerminado == true) {
+        if (ganadas > perdidas) {
+            mostrarMensaje("¡Te has salvado de la horca!");
+        } else {
+            mostrarMensaje("¡Has sido ahorcado!");
+        }
+        mostrarBoton();
+    }
+}
