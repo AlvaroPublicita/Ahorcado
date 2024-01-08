@@ -3,3 +3,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #000000;
+    font-size: 40px;
+}
+
+/* genera Estilo de las letras como teclado de pc de color negro */
+
+
+/* Estilo para la clase .ahorcado__letras y sus hijos */
+.ahorcado__letras {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Puedes ajustar el número de columnas según tu diseño */
+    gap: 5px;
+    max-width: 600px; /* Ajusta según tus necesidades */
+    margin: 20px auto;
+  }
+  
+  .ahorcado__letras__letra {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Ajusta el tamaño de las letras según tus necesidades */
+  .ahorcado__letras__letra:hover {
+    background-color: #ddd; /* Agrega un efecto al pasar el mouse sobre las teclas */
+  }
+  
+  /* Ajusta el tamaño de las letras según tus necesidades */
+  .ahorcado__letras__letra:active {
+    background-color: #ccc; /* Agrega un efecto al presionar las teclas */
+  }
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+main .btn {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+main .btn:active {
+    background-color: #ffffff;
+    color: #000000;
+}
