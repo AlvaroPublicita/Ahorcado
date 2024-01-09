@@ -9,7 +9,7 @@
 
 body{
     margin: 0;
-    background: url(./svg/Background.svg) no-repeat center;
+    background: url(./svg/Background.svg);
     /* background-size: cover; */
     font-family: 'Carter One', Arial, Helvetica, sans-serif;
     
@@ -34,7 +34,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 45px;
 }
 
 #imagen{
@@ -72,7 +72,7 @@ main{
 }
 
 /* Estilo de boton tipo juego gameboy */
-#jugar{
+#jugar, #reiniciar{
     width: 25%;
     height: 25%;
     background: #1e0030;
