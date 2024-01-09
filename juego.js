@@ -102,7 +102,7 @@ function click_letras(event){ //función para adivinar la letra
 
     if( acerto == false ){ //si no acerté...
         cant_errores++; //sumo un error
-        const source = `./CSS/svg/Human_Parts/H${cant_errores}.svg` ; //obtengo la ruta de la imagen
+        const source = `./CSS/svg/Human_Parts/Hu${cant_errores}.svg` ; //obtengo la ruta de la imagen
         imagen.src = source; //cambio la imagen
     }
 
