@@ -50,7 +50,7 @@ function obtener_random( num_min, num_max ){ //función para obtener un número 
 btn.addEventListener('click', iniciar ); //cuando hago click en el botón, llamo a la función iniciar( )
 
 function iniciar(event){ //función para iniciar el juego
-    imagen.src = './'; //cambio la imagen del ahorcado
+    imagen.src = './CSS/svg/Human_Parts/Hu0.svg'; //cambio la imagen del ahorcado
     btn.disabled = true; //deshabilito el botón de jugar
     cant_errores = 0; //reinicio la cantidad de errores
     cant_aciertos = 0;  //reinicio la cantidad de aciertos
@@ -107,10 +107,10 @@ function click_letras(event){ //función para adivinar la letra
     }
 
     if( cant_errores == 6 ){ //si me equivoqué 6 veces...
-        id('resultado').innerHTML ="LA IA HA GANADO LA PALABRA ERA " + palabrita;
+        id('resultado').innerHTML = alert("LA IA HA GANADO LA PALABRA ERA " + palabrita);
         game_over( ); //llamo a la función game_over( )
     }else if( cant_aciertos == palabrita.length ){ //si acerté todas las letras...
-        id('resultado').innerHTML = "HAS DERROTADO A LA IA"; //muestro el mensaje
+        id('resultado').innerHTML = alert("HAS DERROTADO A LA IA"); //muestro el mensaje
         game_over( ); //llamo a la función game_over( )
     }
     console.log( "la letra " + letra + " en la palabra " + palabra + " ¿existe?: " + acerto ); //muestro en la consola si acerté o no
