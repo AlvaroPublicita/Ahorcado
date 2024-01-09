@@ -116,6 +116,15 @@ function click_letras(event){ //función para adivinar la letra
     console.log( "la letra " + letra + " en la palabra " + palabra + " ¿existe?: " + acerto ); //muestro en la consola si acerté o no
 }
 
+// función para mostrar el contador de aciertos y errores
+// TODO no tengo claro como mostrarlos en pantalla
+
+function mostrar_contador( ){ //función para mostrar el contador de errores y aciertos
+    const errores = id( 'errores' ); //document.getElementById( 'errores' );
+    const aciertos = id( 'aciertos' ); //document.getElementById( 'aciertos' );
+    errores.innerHTML = cant_errores; //muestro la cantidad de errores
+    aciertos.innerHTML = cant_aciertos; //muestro la cantidad de aciertos
+}   
 
 
 /* fin del juego */
