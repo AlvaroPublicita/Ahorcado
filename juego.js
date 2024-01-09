@@ -54,7 +54,7 @@ function iniciar(event){ //función para iniciar el juego
     btn.disabled = true; //deshabilito el botón de jugar
     cant_errores = 0; //reinicio la cantidad de errores
     cant_aciertos = 0;  //reinicio la cantidad de aciertos
-
+    
     const parrafo = id( 'palabra_a_adivinar' ); //document.getElementById( 'palabra_a_adivinar' );
     parrafo.innerHTML = '';  //limpio el párrafo
 
