@@ -17,12 +17,6 @@ body{
     font-family: 'Carter One', Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
-/* header{
-    background: black;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-} */
 
 h1, h2{
     margin: 0;
@@ -42,9 +36,8 @@ main{
 }
 
 #imagen{
-    width: 200px;
-    margin: auto;
-    
+    width: 400px;
+    top: 100px;        
 }
 
 #palabra_a_adivinar{
@@ -87,3 +80,11 @@ main{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+#jugar:hover{
+    background: #fff;
+    color: #1e0030;
+}
+
+
+
