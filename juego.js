@@ -102,11 +102,11 @@ function click_letras(event){ //función para adivinar la letra
 
     if( acerto == false ){ //si no acerté...
         cant_errores++; //sumo un error
-        const source = `./CSS/img/svg/H${cant_errores}.png` ; //obtengo la ruta de la imagen
+        const source = `./CSS/svg/Human_Parts/H${cant_errores}.svg` ; //obtengo la ruta de la imagen
         imagen.src = source; //cambio la imagen
     }
 
-    if( cant_errores == 7 ){ //si me equivoqué 7 veces...
+    if( cant_errores == 6 ){ //si me equivoqué 6 veces...
         id('resultado').innerHTML ="LA IA HA GANADO LA PALABRA ERA " + palabrita;
         game_over( ); //llamo a la función game_over( )
     }else if( cant_aciertos == palabrita.length ){ //si acerté todas las letras...
