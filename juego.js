@@ -50,7 +50,7 @@ function obtener_random( num_min, num_max ){ //función para obtener un número 
 btn.addEventListener('click', iniciar ); //cuando hago click en el botón, llamo a la función iniciar( )
 
 function iniciar(event){ //función para iniciar el juego
-    imagen.src = './CSS/img/img0.png'; //cambio la imagen del ahorcado
+    imagen.src = './'; //cambio la imagen del ahorcado
     btn.disabled = true; //deshabilito el botón de jugar
     cant_errores = 0; //reinicio la cantidad de errores
     cant_aciertos = 0;  //reinicio la cantidad de aciertos
@@ -102,7 +102,7 @@ function click_letras(event){ //función para adivinar la letra
 
     if( acerto == false ){ //si no acerté...
         cant_errores++; //sumo un error
-        const source = `./CSS/img/img${cant_errores}.png` ; //obtengo la ruta de la imagen
+        const source = `./CSS/img/svg/H${cant_errores}.png` ; //obtengo la ruta de la imagen
         imagen.src = source; //cambio la imagen
     }
 
