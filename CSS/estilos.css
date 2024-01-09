@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+header {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;  
+}
+
 body{
     margin: 0;
-    background: url(./img/Archivos_SVG/Background.svg) no-repeat center;
-    background-size: cover;
+    background: url(./svg/Background.svg) no-repeat center;
+    /* background-size: cover; */
     font-family: 'Carter One', Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
@@ -27,7 +33,6 @@ main{
     width: 70%;
     margin: auto;
     padding: 20px;
-    background: rgba(255,255,255,.7);
     display: flex;
     gap: 30px;
 }
@@ -38,6 +43,8 @@ main{
 
 #imagen{
     width: 200px;
+    margin: auto;
+    
 }
 
 #palabra_a_adivinar{
@@ -65,4 +72,18 @@ main{
     width: 28px;
     padding: 6px 0;
     text-align: center;
+}
+
+/* Estilo de boton tipo juego gameboy */
+#jugar{
+    width: 25%;
+    height: 25%;
+    background: #1e0030;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
