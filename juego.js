@@ -1,3 +1,5 @@
+'use strict';
+
 let palabrita;
 let cant_errores = 0; //cuantas veces me equivoqué
 let cant_aciertos = 0; //cuantas letras acerté
@@ -43,12 +45,11 @@ function obtener_random( num_min, num_max ){
     return valor_al_azar;
 }
 
-
 /* click en iniciar juego */
 btn.addEventListener('click', iniciar );
 
 function iniciar(event){
-    imagen.src = 'img/img0.png';
+    imagen.src = './CSS/img/img0.png';
     btn.disabled = true;
     cant_errores = 0;
     cant_aciertos = 0; 
@@ -100,7 +101,7 @@ function click_letras(event){
 
     if( acerto == false ){
         cant_errores++;
-        const source = `img/img${cant_errores}.png` ;
+        const source = `./CSS/img/img${cant_errores}.png` ;
         imagen.src = source;
     }
 
@@ -113,6 +114,7 @@ function click_letras(event){
     }
     console.log( "la letra " + letra + " en la palabra " + palabra + " ¿existe?: " + acerto );
 }
+
 
 
 /* fin del juego */
