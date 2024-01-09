@@ -4,18 +4,15 @@
     box-sizing: border-box;
 }
 
-header {
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;  
-}
+/* Estilo de header para logo de juego */
+
 
 body{
     margin: 0;
     background: url(./svg/Background.svg) no-repeat center;
     /* background-size: cover; */
     font-family: 'Carter One', Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+    
 }
 
 h1, h2{
@@ -32,11 +29,16 @@ main{
 }
 
 #logo{ 
-    width: 100px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
 #imagen{
-    width: 400px;
+    width: 200px;
     top: 100px;        
 }
 
@@ -55,10 +57,12 @@ main{
 }
 
 #letras{
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 9px;
+    gap: 10px;
+    justify-content: center;
+        
 }
 
 #letras button{
@@ -86,5 +90,15 @@ main{
     color: #1e0030;
 }
 
-
+footer{
+    width: 100%;
+    height: 100px;
+    background: #1e0030;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'Press Start 2P', cursive;
+}
 
