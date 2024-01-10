@@ -4,20 +4,13 @@
     box-sizing: border-box;
 }
 
-/* Estilo de header para logo de juego */
-
 
 body{
     margin: 0;
     background: url(./svg/Background.svg);
-    /* background-size: cover; */
+    background-size: cover; 
     font-family: 'Carter One', Arial, Helvetica, sans-serif;
     
-}
-
-h1, h2{
-    margin: 0;
-    color: white;
 }
 
 main{
