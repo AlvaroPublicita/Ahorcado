@@ -33,6 +33,7 @@ const palabras = [
 ];
 
 const btn = id('jugar'); //document.getElementById( 'jugar' );
+const btnReiniciar = id('restart'); // Nueva const para botón restart
 const imagen = id( 'imagen' ); //document.getElementById( 'imagen' );
 const btn_letras = document.querySelectorAll( "#letras button" ); //document.querySelectorAll( "#letras button" );
 
@@ -73,6 +74,24 @@ function iniciar(event){ //función para iniciar el juego
         const span = document.createElement( 'span' ); //creo un elemento span
         parrafo.appendChild( span ); //agrego el span al párrafo
     }
+
+}
+
+function reiniciar_juego(){ // Creo nueva función para reiciniar el juego
+    btn.disabled = false; // Habilito el botón de jugar
+    imagen.src = './css/img/Human_Parts/Hu0.svg'; // restablesco la imagen del ahorcado
+    cant_errores = 0; // Restablesco los contadores
+    cant_aciertos = 0;
+    
+    const parrafo = id('palabra_a_adivinar'); // limpio el párrafo de la palabra a adivinar
+    parrafo.innerHTML = '';
+
+    // Deshabilito los botones de letras
+    for (let i = 0; i < btn_letras.length; i++){
+        btn_letras[i].disabled = false;
+    }
+
+    iniciar(); // llamo a la función iniciar para comenzar un juego nuevo
 
 }
 
