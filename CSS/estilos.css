@@ -41,5 +41,105 @@
     width: 200px;
     height: auto;
     order: 3;
-    
+}
+
+.flexContainer #palabra_a_adivinar{
+    height: 3em;
+    order: 2;
+    align-self: center;
+}
+
+#palabra_a_adivinar span{
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block; /* sin esto, por ser un elemento de línea, no tomaría el width */
+} 
+
+#teclado{
+    margin-bottom: 140px;
+}
+
+#letras{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#letras button{
+    width: 28px;
+    padding: 6px 0;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+#contador{
+    /* border: 3px solid #1e0030; */
+    margin: 10px 0 5px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Press Start 2P';
+}
+
+/* Estilo de boton tipo juego gameboy */
+.buttons{
+    /* border: 3px solid #1e0030; */
+    display: flex;
+    justify-content: center;
+}
+
+#jugar{
+    width: 140x;
+    height: 50px;
+    background: #1e0030;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Press Start 2P';
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#restart{
+    width: 140x;
+    height: 50px;
+    background: #1e0030;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Press Start 2P';
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#jugar:hover{
+    background: #fff;
+    color: #1e0030;
+}
+
+#restart:hover{
+    background: #fff;
+    color: #1e0030;
+}
+
+footer{
+    color: whitesmoke;
+    background-color: #161743;
+    font-family: 'Press Start 2P';
+    font-size: 0.9rem;
+    margin-top: auto;
+    width: auto;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
