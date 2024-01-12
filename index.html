@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <link rel="stylesheet" href="./CSS/estilos.css" />
+    <link rel="stylesheet" href="/CSS/estilos.css" />
     
         <title>IA vs Humans</title>
     <meta name="Authors" content="Álvaro and Juan">
@@ -13,73 +13,76 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="./CSS/svg/Logo_AI_Humans.svg" alt="Logo_Juego">       
+     <div class="container">
+         <img src="/img/Logo_AI_Humans.svg" alt="logo">
+     </div>
     </header>
-
+ 
     <main>
-        <img id="imagen" src="./CSS/svg/Human_Parts/Hu0.svg" alt="Ahorcado" />
-        <div>
-
-            <div>
-                <p id="vidas">Vidas: <span id="vidas_valor"></span></p>
-                <p id="puntuacion">Puntuación: <span id="puntuacion_valor"></span></p>
-            </div>
-
-            <p id="mensaje"></p>            
-
-            <p id="palabra_a_adivinar"></p>
-            
-            <button id="jugar">STAR</button>
-            
-
-            <p id="resultado"></p>
-           
-        </div>
-
-    </main>
-
-        <section id="teclado">
-
-            <div id="letras">
-                <button>a</button>
-                <button>b</button>
-                <button>c</button>
-                <button>d</button>
-                <button>e</button>
-                <button>f</button>
-                <button>g</button>
-                <button>h</button>
-                <button>i</button>
-                <button>j</button>
-                <button>k</button>
-                <button>l</button>
-                <button>m</button>
-                <button>n</button>
-                <button>ñ</button>
-                <button>o</button>
-                <button>p</button>
-                <button>q</button>
-                <button>r</button>
-                <button>s</button>
-                <button>t</button>
-                <button>u</button>
-                <button>v</button>
-                <button>w</button>
-                <button>x</button>
-                <button>y</button>
-                <button>z</button>
-            </div>
-
-        </section>
-    
-    <script src="juego.js"></script>
-
-    <footer>
-        <p>© 2023 Álvaro Díaz and Juan Varela - Hack a Boss</p>
-    </footer>
-
-</body>
-
-
-
-</html>
+     
+     <section class="flexContainer">
+         <div class="human">
+             <img id="imagen" src="/img/Human_Parts/Hu0.svg" alt="Ahorcado" />
+         </div>
+         <div class="robot">
+             <img id="ro" src="/img/Robot/R0.svg" alt="Robot Ahorcado">
+         </div>
+         <p id="palabra_a_adivinar"></p>
+     </section>
+ 
+     <div id="contador">
+         <p>Aciertos: <span id="aciertos"></span></p>
+         <p>Errores: <span id="errores"></span></p>
+     </div>
+         
+ 
+         <p id="mensaje"></p>            
+ 
+     <section class="buttons">
+         <button id="jugar">PLAY</button>
+         <button id="restart">REINICIAR</button>
+     </section>
+         <p id="resultado"></p> <!-- Es algo inportante en el código de JS? -->
+        
+     
+     <section id="teclado">
+ 
+         <div id="letras">
+             <button>a</button>
+             <button>b</button>
+             <button>c</button>
+             <button>d</button>
+             <button>e</button>
+             <button>f</button>
+             <button>g</button>
+             <button>h</button>
+             <button>i</button>
+             <button>j</button>
+             <button>k</button>
+             <button>l</button>
+             <button>m</button>
+             <button>n</button>
+             <button>ñ</button>
+             <button>o</button>
+             <button>p</button>
+             <button>q</button>
+             <button>r</button>
+             <button>s</button>
+             <button>t</button>
+             <button>u</button>
+             <button>v</button>
+             <button>w</button>
+             <button>x</button>
+             <button>y</button>
+             <button>z</button>
+         </div>
+     </section>
+ </main>
+     
+     <footer>
+             <p>© 2023 Álvaro Díaz and Juan Varela - Hack a Boss</p>
+     </footer>
+     
+ <script src="/juego.js"></script>
+ </body>
+ </html>
