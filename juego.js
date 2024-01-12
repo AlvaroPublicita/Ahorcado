@@ -51,7 +51,7 @@ function obtener_random( num_min, num_max ){ //función para obtener un número 
 btn.addEventListener('click', iniciar ); //cuando hago click en el botón, llamo a la función iniciar( )
 
 function iniciar(event){ //función para iniciar el juego
-    imagen.src = './CSS/svg/Human_Parts/Hu0.svg'; //cambio la imagen del ahorcado
+    imagen.src = './img/Human_Parts/Hu0.svg'; //cambio la imagen del ahorcado
     btn.disabled = true; //deshabilito el botón de jugar
     cant_errores = 0; //reinicio la cantidad de errores
     cant_aciertos = 0;  //reinicio la cantidad de aciertos
@@ -79,7 +79,7 @@ function iniciar(event){ //función para iniciar el juego
 
 function reiniciar_juego(){ // Creo nueva función para reiciniar el juego
     btn.disabled = false; // Habilito el botón de jugar
-    imagen.src = './css/img/Human_Parts/Hu0.svg'; // restablesco la imagen del ahorcado
+    imagen.src = './img/Human_Parts/Hu0.svg'; // restablesco la imagen del ahorcado
     cant_errores = 0; // Restablesco los contadores
     cant_aciertos = 0;
     
