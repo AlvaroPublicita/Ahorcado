@@ -116,6 +116,7 @@ function click_letras(event){ //función para adivinar la letra
             spans[i].innerHTML = letra; //muestro la letra en el span correspondiente
             cant_aciertos++; //sumo un acierto
             acerto = true; //cambio la variable a true
+            mostrar_contador() // llamo al contador para ir mostrando errores y aciertos
         }
     }
 
@@ -123,6 +124,7 @@ function click_letras(event){ //función para adivinar la letra
         cant_errores++; //sumo un error
         const source = `./CSS/svg/Human_Parts/Hu${cant_errores}.svg` ; //obtengo la ruta de la imagen
         imagen.src = source; //cambio la imagen
+        mostrar_contador()
     }
 
     if( cant_errores == 6 ){ //si me equivoqué 6 veces...
