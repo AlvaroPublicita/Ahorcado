@@ -53,7 +53,7 @@ btn.addEventListener('click', iniciar ); //cuando hago click en el botón, llamo
 btnReiniciar.addEventListener('click', reiniciar_juego); // cuando hago click en el botón, llamo a la función reiniciar()
 
 function iniciar(event){ //función para iniciar el juego
-    //imagen.src = './img/Human_Parts/Hu0.svg'; //cambio la imagen del ahorcado
+    //imagen.src = './img/Human_Parts/Hu0.svg'; //cambio la imagen del ahorcado --> Genera error al cargar la primera imagen
     btn.disabled = true; //deshabilito el botón de jugar
     cant_errores = 0; //reinicio la cantidad de errores
     cant_aciertos = 0;  //reinicio la cantidad de aciertos
@@ -124,7 +124,7 @@ function click_letras(event){ //función para adivinar la letra
 
     if( acerto == false ){ //si no acerté...
         cant_errores++; //sumo un error
-        const source = `./img/Human_Parts/Hu${cant_errores}.svg` ; //obtengo la ruta de la imagen
+        const source = `./img/Human_Parts/Hu${cant_errores}.svg`; //obtengo la ruta de la imagen
         imagen.src = source; //cambio la imagen
         mostrar_contador()
     }
