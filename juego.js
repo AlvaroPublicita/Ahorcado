@@ -50,6 +50,8 @@ function obtener_random( num_min, num_max ){ //función para obtener un número 
 /* click en iniciar juego */
 btn.addEventListener('click', iniciar ); //cuando hago click en el botón, llamo a la función iniciar( )
 
+btnReiniciar.addEventListener('click', reiniciar_juego); // cuando hago click en el botón, llamo a la función reiniciar()
+
 function iniciar(event){ //función para iniciar el juego
     imagen.src = './img/Human_Parts/Hu0.svg'; //cambio la imagen del ahorcado
     btn.disabled = true; //deshabilito el botón de jugar
@@ -155,6 +157,7 @@ function game_over( ){ //función para terminar el juego
     }
 
     btn.disabled = false; //habilito el botón de jugar   
+    btnReiniciar.disabled = false; // Habiloto el Botón de reiniciar
 }
 
 game_over( ); //llamo a la función game_over( ) para deshabilitar los botones de letras y habilitar el botón de jugar
