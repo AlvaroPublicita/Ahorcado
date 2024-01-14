@@ -153,7 +153,6 @@ function mostrar_contador( ){ //función para mostrar el contador de errores y a
     aciertos.innerHTML = cant_aciertos; //muestro la cantidad de aciertos
 }   
 
-// funcion para remplazar la imagen del ahorcado cuando se gana la partida
 
 /* fin del juego */
 function game_over( ){ //función para terminar el juego
