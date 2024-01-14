@@ -134,13 +134,17 @@ function click_letras(event){ //función para adivinar la letra
         game_over( ); //llamo a la función game_over( )
     }else if( cant_aciertos == palabrita.length ){ //si acerté todas las letras...
         id('resultado').innerHTML = alert("HAS DERROTADO A LA IA"); //muestro el mensaje
+        // cambia la imagen de la clase robot del html por R1.svg
+        document.getElementById("ro").src="./img/Robot/R1.svg";
+        // restablece la imagen del ahorcado
+        imagen.src = './img/Human_Parts/Hu0.svg';
+                
         game_over( ); //llamo a la función game_over( )
     }
     console.log( "la letra " + letra + " en la palabra " + palabra + " ¿existe?: " + acerto ); //muestro en la consola si acerté o no
 }
 
 // función para mostrar el contador de aciertos y errores
-// TODO no tengo claro como mostrarlos en pantalla
 
 function mostrar_contador( ){ //función para mostrar el contador de errores y aciertos
     const errores = id( 'errores' ); //document.getElementById( 'errores' );
@@ -149,6 +153,7 @@ function mostrar_contador( ){ //función para mostrar el contador de errores y a
     aciertos.innerHTML = cant_aciertos; //muestro la cantidad de aciertos
 }   
 
+// funcion para remplazar la imagen del ahorcado cuando se gana la partida
 
 /* fin del juego */
 function game_over( ){ //función para terminar el juego
